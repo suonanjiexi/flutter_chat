@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../ChatDetail/ChatDeatail.dart';
+import '../chatdetail/ChatDeatail.dart';
 import '../Home/ChatList.dart';
 import '../Home/Menu.dart';
 

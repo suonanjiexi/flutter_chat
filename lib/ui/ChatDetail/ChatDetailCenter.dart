@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/ui/chatdetail/BubbleWidget.dart';
 
 class ChatDetailCenter extends StatefulWidget {
   const ChatDetailCenter({super.key});
@@ -13,7 +14,7 @@ class _ChatDetailCenterState extends State<ChatDetailCenter> {
     return Expanded(
       flex: 1,
       child: ListView.builder(
-        itemCount: 100,
+        itemCount: 50,
         itemBuilder: ((context, index) {
           return Padding(
             padding: const EdgeInsets.all(8.0),
@@ -37,29 +38,19 @@ class _ChatDetailCenterState extends State<ChatDetailCenter> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 200,
-                              height: 40,
-                              decoration: const BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(10),
-                                  topRight: Radius.circular(10),
-                                  bottomLeft: Radius.circular(10),
-                                  bottomRight: Radius.circular(10),
-                                ),
-                              ),
-                              child: const Center(
-                                child: Text("你好,很高兴认识你。😀",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                    )),
-                              ),
+                        padding: const EdgeInsets.all(4.0),
+                        child: BubbleWidget(
+                          160.0,
+                          60.0,
+                          Colors.black12,
+                          BubbleArrowDirection.left,
+                          child: const Text(
+                            "你好,很高兴认识你! 😊",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 14.0,
                             ),
-                          ],
+                          ),
                         ),
                       ),
                     ],
@@ -70,24 +61,18 @@ class _ChatDetailCenterState extends State<ChatDetailCenter> {
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 10),
-                        child: Container(
-                          width: 200,
-                          height: 40,
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(10),
-                              topRight: Radius.circular(10),
-                              bottomLeft: Radius.circular(10),
-                              bottomRight: Radius.circular(10),
+                        padding: const EdgeInsets.all(4.0),
+                        child: BubbleWidget(
+                          160.0,
+                          60.0,
+                          Colors.black12,
+                          BubbleArrowDirection.right,
+                          child: const Text(
+                            "你好,我也很高兴认识你。😊",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 14.0,
                             ),
-                          ),
-                          child: const Center(
-                            child: Text("你好,我也很高兴认识你。😋",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                )),
                           ),
                         ),
                       ),

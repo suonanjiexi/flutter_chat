@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_chat/routes/Routes.dart';
 
 class LoginPage extends StatefulWidget {
   final Map arguments = {};
@@ -84,11 +85,11 @@ class _LoginPageState extends State<LoginPage> {
 }
 
 void login(BuildContext context) async {
-  Navigator.pushNamed(context, '/chatListPage',
+  Navigator.pushNamed(context, Routes.chatListPage,
       arguments: {"userName": "索南杰夕", "userId": 23333333});
 }
 
 void register(BuildContext context) async {
-  Navigator.pushNamed(context, '/registerPage',
+  Navigator.pushNamed(context, Routes.registerPage,
       arguments: {"userName": "索南杰夕", "userId": 23333333});
 }

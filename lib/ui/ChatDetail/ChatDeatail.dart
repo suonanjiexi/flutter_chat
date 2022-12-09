@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_chat/ui/ChatDetail/ChatDetailBottom.dart';
-import 'package:flutter_chat/ui/ChatDetail/ChatDetailCenter.dart';
+import 'package:flutter_chat/ui/chatdetail/ChatDetailBottom.dart';
+import 'package:flutter_chat/ui/chatdetail/ChatDetailCenter.dart';
 
 import 'ChatDetailTop.dart';
 
