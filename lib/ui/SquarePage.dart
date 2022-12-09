@@ -11,6 +11,10 @@ class SquarePage extends StatefulWidget {
 class _SquarePageState extends State<SquarePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("flutter"),
+      ),
+    );
   }
 }
