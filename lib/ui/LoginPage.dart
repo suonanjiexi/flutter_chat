@@ -57,10 +57,11 @@ class _LoginPageState extends State<LoginPage> {
                             Expanded(
                               flex: 1,
                               child: ElevatedButton(
-                                  onPressed: () {
-                                    login(context);
-                                  },
-                                  child: const Text("登录")),
+                                onPressed: () {
+                                  login(context);
+                                },
+                                child: const Text("登录"),
+                              ),
                             ),
                             const SizedBox(
                               width: 20,
@@ -68,10 +69,11 @@ class _LoginPageState extends State<LoginPage> {
                             Expanded(
                               flex: 1,
                               child: ElevatedButton(
-                                  onPressed: () {
-                                    register(context);
-                                  },
-                                  child: const Text("注册")),
+                                onPressed: () {
+                                  register(context);
+                                },
+                                child: const Text("注册"),
+                              ),
                             )
                           ],
                         ))
